@@ -67,8 +67,10 @@ function update_list(transaction, results) {
 				<td>${row.nama}</td>
 				<td>${row.alamat}</td>
 				<td>
-					<a href='javascript:void(0);' onclick='edit(${row.id});'>Update</a> | 
-					<a href='javascript:void(0);' onclick='hapus_data(${row.id});'>Hapus</a>
+					<div class="btn-group btn-group-sm" role="group">
+						<a href='javascript:void(0);' onclick='edit(${row.id});' class="btn btn-outline-secondary">Update</a>
+						<a href='javascript:void(0);' onclick='hapus_data(${row.id});' class="btn btn-outline-danger">Hapus</a>
+					</div>
 				</td>
 			</tr>`;
 	}
